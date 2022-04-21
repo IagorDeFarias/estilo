@@ -1,0 +1,206 @@
+body {
+    background-color: rgb(232, 235, 81);
+    color: #FFF;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.conteudo {
+    background-image: url("../img/fundo.jpg");
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    padding: 55px;
+    border-radius: 12px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.topo input {
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #191818;
+    outline: none;
+    font-size: 1.2rem;
+    background: white;
+    color: black;
+}
+
+.topo button {
+    width: 45px;
+    border-radius: 12px;
+    border: 2px solid #191818;
+    background: white;
+    color: black;
+    outline: none;
+}
+
+.topo button:hover {
+    background: #fff455;
+    cursor: pointer;
+}
+
+#listaTarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li {
+    padding: 20px;
+    background: white;
+    color: #000;
+    font-weight: bold;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.btnAcao {
+    border-radius: 2px;
+    border: 2px solid #191818;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    background-image: url("../img/editar.png");
+}
+
+.btnAcao img{
+    width: 25px;
+    height: 25px;
+}
+
+.btnAcao:hover {
+    background: #fff455;
+}
+
+.textoTarefa {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
+#janelaEdicao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #191818;
+    border: 2px solid #2f2e2e;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+    background-image: url("../img/fundo.jpg");
+    color: #000;
+}
+
+#janelaEdicao.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoFundo {
+    position: fixed;
+    top: 0;
+    background-color: rgb(232, 235, 81);
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+#janelaEdicaoFundo.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoBtnFechar {
+    position: absolute;
+    top: -25px;
+    right: -18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #2d2c2c;
+    background: white;
+    color: black;
+    outline: none;
+}
+#janelaEdicaoBtnFechar:hover{
+    background: #fff455;
+}
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.frm-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.frm-linha label {
+    margin-bottom: 7px;
+}
+
+.frm-linha input {
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid #191818;
+    font-size: 1.2rem;
+    background: white;
+    color: black;
+}
+
+.frm-linha button {
+    background: white;
+    border: 2px solid #191818;
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.frm-linha button:hover {
+    background: #fff455;
+}
+
+#btnAddTarefa img{
+    margin-top: 2px;
+    width: 25px;
+    height: 25px;
+}
+
+#inputTarefaNomeEdicao{
+    font-weight: bold;
+}
+#janelaEdicaoBtnFechar img{
+    margin-top: 2px;
+    width: 25px;
+    height: 25px;
+}
